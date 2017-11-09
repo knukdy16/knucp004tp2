@@ -26,7 +26,7 @@ void quickSort(int a[], int left, int right) {
                 quickSort(a, j+1, right);
         }
 }
-
+/*
 void main(void) {
         int i;
         int a[MAX_SIZE + 1];
@@ -41,4 +41,4 @@ void main(void) {
                 printf("%d ", a[i]);
         }
         puts("");
-}
+}*/
