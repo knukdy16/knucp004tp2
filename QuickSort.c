@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <limits.h>
-#include "sorting.h"
+// #include "sorting.h"
 #define SWAP(x, y, t) ((t) = (x), (x) = (y), (y) = (t))
 
 void quickSort(int a[], int left, int right) {
