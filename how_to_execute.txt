@@ -1,0 +1,2 @@
+gcc -o (filename) load.c QuickSort.c insertionSort.c sorting.c
+./(filename) (.txt_file_name)
