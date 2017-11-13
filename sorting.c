@@ -29,10 +29,13 @@ void main(int argc, char* argv[]) {
         insertionSort(arr2, size + 1);
         gettimeofday(&t2, NULL);
         printf("%0.lf miliseconds\n", (t2.tv_sec*1000 + t2.tv_usec*0.001) - (t1.tv_sec*1000 + t1.tv_usec*0.001));
+        
+        writefile(arr2, size, "insertion.txt");
 
         gettimeofday(&t1, NULL);
         quickSort(arr3, 0, size - 1);
         gettimeofday(&t2, NULL);
         printf("%0.lf miliseconds\n", (t2.tv_sec*1000 + t2.tv_usec*0.001) - (t1.tv_sec*1000 + t1.tv_usec*0.001));
 
+        writefile(arr3, size, "quick.txt");
 }

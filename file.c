@@ -24,3 +24,19 @@ void readfile(int a[], int* size)
 
         fclose(fp);
 }
+
+void writefile(int a[], int size, char fname[])
+{
+        FILE *out_fd;
+        int i = 1;
+
+        if((out_fd = fopen(fname, "w")) == NULL)
+        {
+                fprintf(stderr, "File is not open\n");
+                exit(1);
+        }
+
+        for(i=1;i<=size;i++)
+                fprintf(out_fd, "%d ", a[i]);
+        fclose(out_fd);
+}
