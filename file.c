@@ -38,6 +38,5 @@ void writefile(int a[], int size, char fname[])
 
         for(i=1;i<=size;i++)
                 fprintf(out_fd, "%d ", a[i]);
-
         fclose(out_fd);
 }
