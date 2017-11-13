@@ -5,3 +5,4 @@ int *load_ary(char *[], int *);
 int *set_arr2(int *, int);
 int *set_arr3(int *, int);
 void oops(char *, char *);
+void writefile(int[], int, char[]);
