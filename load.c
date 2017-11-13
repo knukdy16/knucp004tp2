@@ -96,6 +96,23 @@ int* set_arr3(int* arr1, int size) { // for quickSort
         return set_arr;
 }
 
+void writefile(int a[], int size, char fname[])
+{
+        FILE *out_fd;
+        int i = 1;
+
+        if((out_fd = fopen(fname, "w")) == NULL)
+        {
+                fprintf(stderr, "File is not open\n");
+                exit(1);
+        }
+
+        for(i=1;i<=size;i++)
+                fprintf(out_fd, "%d ", a[i]);
+
+        fclose(out_fd);
+}
+
 /*
 int main(int ac, char *av[]) {
         int* ary1;
